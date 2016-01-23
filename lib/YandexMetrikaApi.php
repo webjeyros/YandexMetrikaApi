@@ -405,7 +405,7 @@ class YandexMetrikaApi {
 	 * @param string  $group    Группировка данных по времени.
 	 * @param integer $per_page Количество элементов на странице выдачи.
 	 */
-	public function StatTrafficSummary($id, $goal_id, $date1 = null, $date2 = null, $group = null, $per_page = null) {
+	public function StatTrafficSummary($id, $goal_id = null, $date1 = null, $date2 = null, $group = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/traffic/summary", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "group" => $group, "per_page" => $per_page));
 	}
 
@@ -416,7 +416,7 @@ class YandexMetrikaApi {
 	 * @param string  $date1   Дата начала периода выборки в формате YYYYMMDD.
 	 * @param string  $date2   Дата окончания периода выборки в формате YYYYMMDD.
 	 */
-	public function StatTrafficDeepness($id, $goal_id, $date1 = null, $date2 = null) {
+	public function StatTrafficDeepness($id, $goal_id = null, $date1 = null, $date2 = null) {
 		return $this -> QueryYandex("get", "/stat/traffic/deepness", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, ));
 	}
 
@@ -427,7 +427,7 @@ class YandexMetrikaApi {
 	 * @param string  $date1   Дата начала периода выборки в формате YYYYMMDD.
 	 * @param string  $date2   Дата окончания периода выборки в формате YYYYMMDD.
 	 */
-	public function StatTrafficHourly($id, $goal_id, $date1 = null, $date2 = null) {
+	public function StatTrafficHourly($id, $goal_id = null, $date1 = null, $date2 = null) {
 		return $this -> QueryYandex("get", "/stat/traffic/hourly", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, ));
 	}
 
@@ -452,7 +452,7 @@ class YandexMetrikaApi {
 	 * @param string  $sort    Поле данных отчета, по которому необходимо отсортировать результаты запроса.
 	 * @param integer $reverse Режим сортировки данных.
 	 */
-	public function StatSourcesSummary($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null) {
+	public function StatSourcesSummary($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null) {
 		return $this -> QueryYandex("get", "/stat/sources/summary", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse));
 	}
 
@@ -467,7 +467,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatSourcesSites($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatSourcesSites($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/sources/sites", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -482,7 +482,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatSourcesSE($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatSourcesSE($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/sources/search_engines", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -497,7 +497,7 @@ class YandexMetrikaApi {
 	 * @param integer $se_id    Идентификатор поисковой системы (значение из справочника Метрики).
 	 * @param integer $per_page Количество элементов на странице выдачи.
 	 */
-	public function StatSourcesPhrases($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $se_id = null, $per_page = null) {
+	public function StatSourcesPhrases($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $se_id = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/sources/phrases", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "se_id" => $se_id, "per_page" => $per_page));
 	}
 
@@ -512,7 +512,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatSourcesMarketing($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatSourcesMarketing($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/sources/marketing", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -527,7 +527,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatSourcesDirectSummary($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatSourcesDirectSummary($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/sources/direct/summary", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -541,7 +541,7 @@ class YandexMetrikaApi {
 	 * @param integer $reverse  Режим сортировки данных.
 	 * @param integer $per_page Количество элементов на странице выдачи.
 	 */
-	public function StatSourcesDirectPlatforms($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $per_page = null) {
+	public function StatSourcesDirectPlatforms($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/sources/direct/platforms", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "per_page" => $per_page));
 	}
 
@@ -556,7 +556,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatSourcesDirectRegions($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatSourcesDirectRegions($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/sources/direct/regions", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -571,7 +571,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatSourcesTags($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatSourcesTags($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/sources/tags", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -586,7 +586,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatContentPopular($id, $mirror_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatContentPopular($id, $mirror_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/content/popular", array("id" => $id, "mirror_id" => $mirror_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -602,7 +602,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatContentEntrance($id, $goal_id, $mirror_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatContentEntrance($id, $goal_id = null, $mirror_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/content/entrance", array("id" => $id, "goal_id" => $goal_id, "mirror_id" => $mirror_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -617,7 +617,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatContentExit($id, $mirror_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatContentExit($id, $mirror_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/content/exit", array("id" => $id, "mirror_id" => $mirror_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -660,7 +660,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatContentUser_vars($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatContentUser_vars($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/content/user_vars", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -690,7 +690,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatGeo($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatGeo($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/geo", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -701,7 +701,7 @@ class YandexMetrikaApi {
 	 * @param string  $date1   Дата начала периода выборки в формате YYYYMMDD.
 	 * @param string  $date2   Дата окончания периода выборки в формате YYYYMMDD.
 	 */
-	public function StatDemographyAge_gender($id, $goal_id, $date1 = null, $date2 = null) {
+	public function StatDemographyAge_gender($id, $goal_id = null, $date1 = null, $date2 = null) {
 		return $this -> QueryYandex("get", "/stat/demography/age_gender", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2));
 	}
 
@@ -712,7 +712,7 @@ class YandexMetrikaApi {
 	 * @param string  $date1   Дата начала периода выборки в формате YYYYMMDD.
 	 * @param string  $date2   Дата окончания периода выборки в формате YYYYMMDD.
 	 */
-	public function StatDemographyStructure($id, $goal_id, $date1 = null, $date2 = null) {
+	public function StatDemographyStructure($id, $goal_id = null, $date1 = null, $date2 = null) {
 		return $this -> QueryYandex("get", "/stat/demography/structure", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2));
 	}
 
@@ -727,7 +727,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatTechBrowsers($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatTechBrowsers($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/tech/browsers", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -742,7 +742,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatTechOs($id, $goal_id, $date1 = null, $date2 = null, $sort, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatTechOs($id, $goal_id = null, $date1 = null, $date2 = null, $sort, $reverse = null, $table_mode = null, $per_page = null) {
 
 		return $this -> QueryYandex("get", "/stat/tech/os", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
@@ -758,7 +758,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatTechDisplay($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatTechDisplay($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/tech/display", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -773,7 +773,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatTechMobile($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatTechMobile($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/tech/mobile", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -788,7 +788,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatTechFlash($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatTechFlash($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/tech/flash", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -803,7 +803,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatTechSilverlight($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatTechSilverlight($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/tech/silverlight", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -816,7 +816,7 @@ class YandexMetrikaApi {
 	 * @param string  $sort       Поле данных отчета, по которому необходимо отсортировать результаты запроса.
 	 * @param integer $reverse    Режим сортировки данных.
 	 */
-	public function StatTechJava($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null) {
+	public function StatTechJava($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null) {
 
 		return $this -> QueryYandex("get", "/stat/tech/java", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse));
 	}
@@ -830,7 +830,7 @@ class YandexMetrikaApi {
 	 * @param string  $sort    оле данных отчета, по которому необходимо отсортировать результаты запроса.
 	 * @param integer $reverse Режим сортировки данных.
 	 */
-	public function StatTechCookies($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null) {
+	public function StatTechCookies($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null) {
 		return $this -> QueryYandex("get", "/stat/tech/cookies", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse));
 	}
 
@@ -843,7 +843,7 @@ class YandexMetrikaApi {
 	 * @param string  $sort    Поле данных отчета, по которому необходимо отсортировать результаты запроса.
 	 * @param integer $reverse Режим сортировки данных.
 	 */
-	public function StatTechJavaScript($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null) {
+	public function StatTechJavaScript($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null) {
 
 		return $this -> QueryYandex("get", "/stat/tech/javascript", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse));
 	}

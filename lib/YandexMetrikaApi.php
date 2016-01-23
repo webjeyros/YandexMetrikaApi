@@ -35,6 +35,7 @@ class YandexMetrikaApi {
 	 * @param array  $options Параметры ― Обязательные и необязательные параметры запроса, которые не входят в состав URL ресурса.
 	 */
 	private function QueryYandex($method = "get", $path = "/counters", $options = array()) {
+        $opt = "";
 		if ($method === "get") {
 			foreach ($options as $key => $value)
 				$opt .= "{$key}={$value}&";

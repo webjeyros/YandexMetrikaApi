@@ -1,5 +1,5 @@
 ## Исходный код
-* /lib/YandexMetrikaApi.php - класс-враппер api яндекс метрики
+* /lib/YandexMetrikaApi.php - класс-враппер [api яндекс метрики](https://tech.yandex.ru/metrika/doc/ref/concepts/About-docpage/)
 * /index.php -Пример использования
 
 **Внимание:** Требуется библиотека unirest (http://unirest.io/)

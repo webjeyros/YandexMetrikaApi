@@ -21,7 +21,7 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 class YandexMetrikaApi {
 	public $access_token;
-	public $error_code = array("ERR_NO_SUCH_METHOD" => "Метод не существует.", "ERR_PARAM_REQUIRED" => "Требуется параметр.", "ERR_READ_ONLY" => "Операции добавления и редактирования счетчика временно недоступны. Попробуйте повторить операцию позже.", "ERR_EMAIL" => "Неверно указан адрес E-mail.", "ERR_EMAIL_EMPTY" => "Не указан адрес E-mail.", "ERR_MIRROR" => "Неверно указано зеркало для сайта.", "ERR_MIRROR_EXISTS" => "Для данного сайта уже существует счетчик. Укажите другое наименование.", "ERR_SITE" => "Неверно указан сайт.", "ERR_SITE_EXISTS" => "Для данного сайта уже существует счетчик. Укажите другое наименование.", "ERR_SITE_NAME" => "Не указано наименование счетчика или сайт.", "ERR_SITE_NAME_EXISTS" => "Счетчик с таким наименованием уже существует.", "ERR_CODE_INFORMER_COLOR_ARROW" => "Неверно указан цвет стрелки информера.", "ERR_CODE_INFORMER_COLOR_END" => "Неверно указан конечный цвет градиента информера.", "ERR_CODE_INFORMER_COLOR_START" => "Неверно указан начальный цвет градиента информера.", "ERR_CODE_INFORMER_COLOR_TEXT" => "Неверно указан цвет текста информера.", "ERR_CODE_INFORMER_INDICATOR" => "Неверно указан индикатор информера.", "ERR_CODE_INFORMER_SIZE" => "Неверно указан тип размера информера.", "ERR_CODE_INFORMER_TYPE" => "Неверно указан тип кода информера.", "ERR_GOAL_CONDITIONS_EMPTY" => "Не указаны условия для цели.", "ERR_GOAL_CONDITIONS_LIMIT" => "Превышен лимит условий для цели.", "ERR_GOAL_CONDITION_TYPE" => "Неверно указан тип цели.", "ERR_GOAL_CONDITION_TYPE_EMPTY" => "Не указан тип цели.", "ERR_GOAL_CONDITION_URL" => "Неверно указан URL цели.", "ERR_GOAL_CONDITION_URL_EMPTY" => "Не указан URL цели.", "ERR_GOAL_DEPTH" => "Неверно указано число просмотренных страниц.", "ERR_GOAL_DEPTH_EMPTY" => "Не указано число просмотренных страниц.", "ERR_GOAL_DUPLICATED" => "Дубликат ранее заданной цели.", "ERR_GOAL_FLAG" => "Неверно указан тип цели интернет магазина.", "ERR_GOAL_FLAG_LIMIT" => "Для одного счетчика можно указать только 1 заказ и 1 корзину.", "ERR_GOAL_NAME_EMPTY" => "Не указано название цели.", "ERR_GOAL_TYPE" => "Неверно указан тип цели.", "ERR_GOAL_TYPE_EMPTY" => "Не указан тип цели.", "ERR_GOALS_LIMIT" => "Превышен лимит целей.", "ERR_FILTER_ACTION" => "Неверно указан тип фильтра.", "ERR_FILTER_ACTION_EMPTY" => "Не указан тип фильтра.", "ERR_FILTER_ATTR" => "Неверно указано поле фильтра.", "ERR_FILTER_ATTR_EMPTY" => "Не указано поле фильтра.", "ERR_FILTER_IP" => "IP-адрес или диапазон указан в неверном формате.", "ERR_FILTER_IP_TYPE" => "Для фильтра «IP» неверно указано отношение.", "ERR_FILTER_IP_EQUAL" => "Укажите только один IP-адрес.", "ERR_FILTER_MIRRORS_ACTION" => "Для зеркал тип фильтра указан неверно.", "ERR_FILTER_REF_TYPE" => "Для фильтра «Реферер» неверно указано отношение.", "ERR_FILTER_STATUS" => "Неверно указан статус фильтра.", "ERR_FILTER_TITLE_TYPE" => "Для фильтра «Заголовок» неверно указано отношение.", "ERR_FILTER_TYPE" => "Неверно указано условие для фильтра.", "ERR_FILTER_TYPE_EMPTY" => "Не указано условие для фильтра.", "ERR_FILTER_UNIQ_ID_ACTION" => "Для фильтра «Не учитывать меня» тип фильтра указан неверно.", "ERR_FILTER_URL_TYPE" => "Для фильтра «URL страницы» неверно указано отношение.", "ERR_FILTER_VALUE_EMPTY" => "Не указано значение фильтра.", "ERR_FILTERS_LIMIT" => "Превышен лимит фильтров.", "ERR_OPERATION_ACTION" => "Неверно указан тип операции.", "ERR_OPERATION_ACTION_EMPTY" => "Не указан тип операции.", "ERR_OPERATION_ATTR" => "Неверно указано поле операции.", "ERR_OPERATION_ATTR_EMPTY" => "Не указано поле операции.", "ERR_OPERATION_STATUS" => "Неверно указан статус операции.", "ERR_OPERATION_VALUE_EMPTY" => "Не указано значение операции.", "ERR_OPERATIONS_LIMIT" => "Превышен лимит операций.", "ERR_DELEGATE_LOGIN_MYSELF" => "Нельзя указывать свой логин.", "ERR_DELEGATE_LOGIN_NOT_EXISTS" => "Такой пользователь не существует.", "ERR_DELEGATES_LIMIT" => "Превышен лимит представителей.", "ERR_GRANT_LOGIN_MYSELF" => "Нельзя указывать свой логин.", "ERR_GRANT_LOGIN_NOT_EXISTS" => "Такой пользователь не существует.", "ERR_GRANT_PERM" => "Неверно заданы права.", "ERR_GRANTS_LIMIT" => "Превышен лимит прав доступа.", "ERR_DATE_BEGIN" => "Неверно указана дата начала периода.", "ERR_DATE_DELTA" => "Дата конца периода должна быть не меньше даты начала.", "ERR_DATE_END" => "Неверно указана дата конца периода.", "ERR_NO_DATA" => "Нет данных за выбранный период.");
+	public $error_code = array("ERR_NO_SUCH_METHOD" => "Метод не существует.", "ERR_PARAM_REQUIRED" => "Требуется параметр.", "ERR_READ_ONLY" => "Операции добавления и редактирования счетчика временно недоступны. Попробуйте повторить операцию позже.", "ERR_EMAIL" => "Неверно указан адрес E-mail.", "ERR_EMAIL_EMPTY" => "Не указан адрес E-mail.", "ERR_MIRROR" => "Неверно указано зеркало для сайта.", "ERR_MIRROR_EXISTS" => "Для данного сайта уже существует счетчик. Укажите другое наименование.", "ERR_SITE" => "Неверно указан сайт.", "ERR_SITE_EXISTS" => "Для данного сайта уже существует счетчик. Укажите другое наименование.", "ERR_SITE_NAME" => "Не указано наименование счетчика или сайт.", "ERR_SITE_NAME_EXISTS" => "Счетчик с таким наименованием уже существует.", "ERR_CODE_INFORMER_COLOR_ARROW" => "Неверно указан цвет стрелки информера.", "ERR_CODE_INFORMER_COLOR_END" => "Неверно указан конечный цвет градиента информера.", "ERR_CODE_INFORMER_COLOR_START" => "Неверно указан начальный цвет градиента информера.", "ERR_CODE_INFORMER_COLOR_TEXT" => "Неверно указан цвет текста информера.", "ERR_CODE_INFORMER_INDICATOR" => "Неверно указан индикатор информера.", "ERR_CODE_INFORMER_SIZE" => "Неверно указан тип размера информера.", "ERR_CODE_INFORMER_TYPE" => "Неверно указан тип кода информера.", "ERR_GOAL_CONDITIONS_EMPTY" => "Не указаны условия для цели.", "ERR_GOAL_CONDITIONS_LIMIT" => "Превышен лимит условий для цели.", "ERR_GOAL_CONDITION_TYPE" => "Неверно указан тип цели.", "ERR_GOAL_CONDITION_TYPE_EMPTY" => "Не указан тип цели.", "ERR_GOAL_CONDITION_URL" => "Неверно указан URL цели.", "ERR_GOAL_CONDITION_URL_EMPTY" => "Не указан URL цели.", "ERR_GOAL_DEPTH" => "Неверно указано число просмотренных страниц.", "ERR_GOAL_DEPTH_EMPTY" => "Не указано число просмотренных страниц.", "ERR_GOAL_DUPLICATED" => "Дубликат ранее заданной цели.", "ERR_GOAL_FLAG" => "Неверно указан тип цели интернет магазина.", "ERR_GOAL_FLAG_LIMIT" => "Для одного счетчика можно указать только 1 заказ и 1 корзину.", "ERR_GOAL_NAME_EMPTY" => "Не указано название цели.", "ERR_GOAL_TYPE" => "Неверно указан тип цели.", "ERR_GOAL_TYPE_EMPTY" => "Не указан тип цели.", "ERR_GOALS_LIMIT" => "Превышен лимит целей.", "ERR_FILTER_ACTION" => "Неверно указан тип фильтра.", "ERR_FILTER_ACTION_EMPTY" => "Не указан тип фильтра.", "ERR_FILTER_ATTR" => "Неверно указано поле фильтра.", "ERR_FILTER_ATTR_EMPTY" => "Не указано поле фильтра.", "ERR_FILTER_IP" => "IP-адрес или диапазон указан в неверном формате.", "ERR_FILTER_IP_TYPE" => "Для фильтра «IP» неверно указано отношение.", "ERR_FILTER_IP_EQUAL" => "Укажите только один IP-адрес.", "ERR_FILTER_MIRRORS_ACTION" => "Для зеркал тип фильтра указан неверно.", "ERR_FILTER_REF_TYPE" => "Для фильтра «Реферер» неверно указано отношение.", "ERR_FILTER_STATUS" => "Неверно указан статус фильтра.", "ERR_FILTER_TITLE_TYPE" => "Для фильтра «Заголовок» неверно указано отношение.", "ERR_FILTER_TYPE" => "Неверно указано условие для фильтра.", "ERR_FILTER_TYPE_EMPTY" => "Не указано условие для фильтра.", "ERR_FILTER_UNIQ_ID_ACTION" => "Для фильтра «Не учитывать меня» тип фильтра указан неверно.", "ERR_FILTER_URL_TYPE" => "Для фильтра «URL страницы» неверно указано отношение.", "ERR_FILTER_VALUE_EMPTY" => "Не указано значение фильтра.", "ERR_FILTERS_LIMIT" => "Превышен лимит фильтров.", "ERR_OPERATION_ACTION" => "Неверно указан тип операции.", "ERR_OPERATION_ACTION_EMPTY" => "Не указан тип операции.", "ERR_OPERATION_ATTR" => "Неверно указано поле операции.", "ERR_OPERATION_ATTR_EMPTY" => "Не указано поле операции.", "ERR_OPERATION_STATUS" => "Неверно указан статус операции.", "ERR_OPERATION_VALUE_EMPTY" => "Не указано значение операции.", "ERR_OPERATIONS_LIMIT" => "Превышен лимит операций.", "ERR_DELEGATE_LOGIN_MYSELF" => "Нельзя указывать свой логин.", "ERR_DELEGATE_LOGIN_NOT_EXISTS" => "Такой пользователь не существует.", "ERR_DELEGATES_LIMIT" => "Превышен лимит представителей.", "ERR_GRANT_LOGIN_MYSELF" => "Нельзя указывать свой логин.", "ERR_GRANT_LOGIN_NOT_EXISTS" => "Такой пользователь не существует.", "ERR_GRANT_PERM" => "Неверно заданы права.", "ERR_GRANTS_LIMIT" => "Превышен лимит прав доступа.", "ERR_DATE_BEGIN" => "Неверно указана дата начала периода.", "ERR_DATE_DELTA" => "Дата конца периода должна быть не меньше даты начала.", "ERR_DATE_END" => "Неверно указана дата конца периода.", "ERR_NO_DATA" => "Нет данных за выбранный период.", "ERR_TEMPORARY_UNAVAILABLE" => "Сервис временно недоступен");
 	public $filter_statuses = array("CS_ERR_CONNECT" => "Не удалось проверить (ошибка соединения).", "CS_ERR_DUPLICATED" => "Установлен более одного раза.", "CS_ERR_HTML_CODE" => "Установлен некорректно.", "CS_ERR_OTHER_HTML_CODE" => "Уже установлен другой счетчик.", "CS_ERR_TIMEOUT" => "Не удалось проверить (превышено время ожидания).", "CS_ERR_UNKNOWN" => "Неизвестная ошибка.", "CS_NEW_COUNTER" => " Недавно создан.", "CS_NA" => "Не применим к данному счетчику.", "CS_NOT_EVERYWHERE" => "Установлен не на всех страницах.", "CS_NOT_FOUND" => "Не установлен.", "CS_NOT_FOUND_HOME" => "Не установлен на главной странице.", "CS_NOT_FOUND_HOME_LOAD_DATA" => "Не установлен на главной странице, но данные поступают.", "CS_OBSOLETE" => "Установлена устаревшая версия кода счетчика.", "CS_OK" => "Корректно установлен.", "CS_OK_NO_DATA" => "Установлен, но данные не поступают.", "CS_WAIT_FOR_CHECKING" => "Ожидает проверки наличия.", "CS_WAIT_FOR_CHECKING_LOAD_DATA" => "Ожидает проверки наличия, данные поступают.");
 
 	public function __construct($access_token) {
@@ -35,18 +35,27 @@ class YandexMetrikaApi {
 	 * @param array  $options Параметры ― Обязательные и необязательные параметры запроса, которые не входят в состав URL ресурса.
 	 */
 	private function QueryYandex($method = "get", $path = "/counters", $options = array()) {
+        $opt = "";
 		if ($method === "get") {
 			foreach ($options as $key => $value)
-				$opt .= "{$key}={$value}&";
-			$ret = Unirest::get("http://api-metrika.yandex.ru" . $path . ".json?pretty=1&{$opt}", array("Content-Type" => "application/x-yametrika+json", "Authorization" => "OAuth " . $this -> access_token, "Accept" => "application/x-yametrika+json"));
+                if($value != null)
+                    $opt .= "{$key}={$value}&";
+			$ret = Unirest\Request::get("http://api-metrika.yandex.ru" . $path . ".json?pretty=1&{$opt}", array("Content-Type" => "application/x-yametrika+json", "Authorization" => "OAuth " . $this -> access_token, "Accept" => "application/x-yametrika+json"));
 
 		} else {
-			$ret = Unirest::$method("http://api-metrika.yandex.ru" . $path . ".json?pretty=1", array("Content-Type" => "application/x-yametrika+json", "Authorization" => "OAuth " . $this -> access_token, "Accept" => "application/x-yametrika+json", json_encode($options)));
+			$ret = Unirest\Request::$method("http://api-metrika.yandex.ru" . $path . ".json?pretty=1", array("Content-Type" => "application/x-yametrika+json", "Authorization" => "OAuth " . $this -> access_token, "Accept" => "application/x-yametrika+json", json_encode($options)));
 		}
+        
 		if ($ret -> code != 200) :
-			throw new Exception("Error" . $ret -> body);
-		elseif (json_decode($ret -> raw_body) -> errors) :
-			throw new Exception("Method error");
+            if (property_exists( json_decode($ret -> raw_body), 'errors' )) :
+                $errors = $ret->body->errors;
+                foreach ($errors as $err)
+                    throw new Exception("Error:: ". "[". $err->code . "] [". $this->error_code[$err->code] ."]");
+            endif;
+		elseif (property_exists( json_decode($ret -> raw_body), 'errors' )) :
+            $errors = $ret->body->errors;
+            foreach ($errors as $err)
+                throw new Exception("Method error:: ". "[". $err->code . "] [". $err->text ."]");
 		else :
 			return json_decode($ret -> raw_body);
 		endif;
@@ -404,7 +413,7 @@ class YandexMetrikaApi {
 	 * @param string  $group    Группировка данных по времени.
 	 * @param integer $per_page Количество элементов на странице выдачи.
 	 */
-	public function StatTrafficSummary($id, $goal_id, $date1 = null, $date2 = null, $group = null, $per_page = null) {
+	public function StatTrafficSummary($id, $goal_id = null, $date1 = null, $date2 = null, $group = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/traffic/summary", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "group" => $group, "per_page" => $per_page));
 	}
 
@@ -415,7 +424,7 @@ class YandexMetrikaApi {
 	 * @param string  $date1   Дата начала периода выборки в формате YYYYMMDD.
 	 * @param string  $date2   Дата окончания периода выборки в формате YYYYMMDD.
 	 */
-	public function StatTrafficDeepness($id, $goal_id, $date1 = null, $date2 = null) {
+	public function StatTrafficDeepness($id, $goal_id = null, $date1 = null, $date2 = null) {
 		return $this -> QueryYandex("get", "/stat/traffic/deepness", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, ));
 	}
 
@@ -426,7 +435,7 @@ class YandexMetrikaApi {
 	 * @param string  $date1   Дата начала периода выборки в формате YYYYMMDD.
 	 * @param string  $date2   Дата окончания периода выборки в формате YYYYMMDD.
 	 */
-	public function StatTrafficHourly($id, $goal_id, $date1 = null, $date2 = null) {
+	public function StatTrafficHourly($id, $goal_id = null, $date1 = null, $date2 = null) {
 		return $this -> QueryYandex("get", "/stat/traffic/hourly", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, ));
 	}
 
@@ -451,7 +460,7 @@ class YandexMetrikaApi {
 	 * @param string  $sort    Поле данных отчета, по которому необходимо отсортировать результаты запроса.
 	 * @param integer $reverse Режим сортировки данных.
 	 */
-	public function StatSourcesSummary($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null) {
+	public function StatSourcesSummary($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null) {
 		return $this -> QueryYandex("get", "/stat/sources/summary", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse));
 	}
 
@@ -466,7 +475,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatSourcesSites($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatSourcesSites($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/sources/sites", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -481,7 +490,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatSourcesSE($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatSourcesSE($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/sources/search_engines", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -496,7 +505,7 @@ class YandexMetrikaApi {
 	 * @param integer $se_id    Идентификатор поисковой системы (значение из справочника Метрики).
 	 * @param integer $per_page Количество элементов на странице выдачи.
 	 */
-	public function StatSourcesPhrases($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $se_id = null, $per_page = null) {
+	public function StatSourcesPhrases($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $se_id = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/sources/phrases", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "se_id" => $se_id, "per_page" => $per_page));
 	}
 
@@ -511,7 +520,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatSourcesMarketing($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatSourcesMarketing($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/sources/marketing", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -526,7 +535,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatSourcesDirectSummary($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatSourcesDirectSummary($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/sources/direct/summary", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -540,7 +549,7 @@ class YandexMetrikaApi {
 	 * @param integer $reverse  Режим сортировки данных.
 	 * @param integer $per_page Количество элементов на странице выдачи.
 	 */
-	public function StatSourcesDirectPlatforms($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $per_page = null) {
+	public function StatSourcesDirectPlatforms($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/sources/direct/platforms", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "per_page" => $per_page));
 	}
 
@@ -555,7 +564,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatSourcesDirectRegions($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatSourcesDirectRegions($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/sources/direct/regions", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -570,7 +579,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatSourcesTags($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatSourcesTags($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/sources/tags", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -585,7 +594,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatContentPopular($id, $mirror_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatContentPopular($id, $mirror_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/content/popular", array("id" => $id, "mirror_id" => $mirror_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -601,7 +610,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatContentEntrance($id, $goal_id, $mirror_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatContentEntrance($id, $goal_id = null, $mirror_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/content/entrance", array("id" => $id, "goal_id" => $goal_id, "mirror_id" => $mirror_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -616,7 +625,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatContentExit($id, $mirror_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatContentExit($id, $mirror_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/content/exit", array("id" => $id, "mirror_id" => $mirror_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -659,7 +668,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatContentUser_vars($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatContentUser_vars($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/content/user_vars", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -689,7 +698,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatGeo($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatGeo($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/geo", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -700,7 +709,7 @@ class YandexMetrikaApi {
 	 * @param string  $date1   Дата начала периода выборки в формате YYYYMMDD.
 	 * @param string  $date2   Дата окончания периода выборки в формате YYYYMMDD.
 	 */
-	public function StatDemographyAge_gender($id, $goal_id, $date1 = null, $date2 = null) {
+	public function StatDemographyAge_gender($id, $goal_id = null, $date1 = null, $date2 = null) {
 		return $this -> QueryYandex("get", "/stat/demography/age_gender", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2));
 	}
 
@@ -711,7 +720,7 @@ class YandexMetrikaApi {
 	 * @param string  $date1   Дата начала периода выборки в формате YYYYMMDD.
 	 * @param string  $date2   Дата окончания периода выборки в формате YYYYMMDD.
 	 */
-	public function StatDemographyStructure($id, $goal_id, $date1 = null, $date2 = null) {
+	public function StatDemographyStructure($id, $goal_id = null, $date1 = null, $date2 = null) {
 		return $this -> QueryYandex("get", "/stat/demography/structure", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2));
 	}
 
@@ -726,7 +735,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatTechBrowsers($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatTechBrowsers($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/tech/browsers", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -741,7 +750,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatTechOs($id, $goal_id, $date1 = null, $date2 = null, $sort, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatTechOs($id, $goal_id = null, $date1 = null, $date2 = null, $sort, $reverse = null, $table_mode = null, $per_page = null) {
 
 		return $this -> QueryYandex("get", "/stat/tech/os", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
@@ -757,7 +766,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatTechDisplay($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatTechDisplay($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/tech/display", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -772,7 +781,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatTechMobile($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatTechMobile($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/tech/mobile", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -787,7 +796,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatTechFlash($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatTechFlash($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/tech/flash", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -802,7 +811,7 @@ class YandexMetrikaApi {
 	 * @param string  $table_mode Режим отображения результатов запроса.
 	 * @param integer $per_page   Количество элементов на странице выдачи.
 	 */
-	public function StatTechSilverlight($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
+	public function StatTechSilverlight($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null, $table_mode = null, $per_page = null) {
 		return $this -> QueryYandex("get", "/stat/tech/silverlight", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse, "table_mode" => $table_mode, "per_page" => $per_page));
 	}
 
@@ -815,7 +824,7 @@ class YandexMetrikaApi {
 	 * @param string  $sort       Поле данных отчета, по которому необходимо отсортировать результаты запроса.
 	 * @param integer $reverse    Режим сортировки данных.
 	 */
-	public function StatTechJava($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null) {
+	public function StatTechJava($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null) {
 
 		return $this -> QueryYandex("get", "/stat/tech/java", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse));
 	}
@@ -829,7 +838,7 @@ class YandexMetrikaApi {
 	 * @param string  $sort    оле данных отчета, по которому необходимо отсортировать результаты запроса.
 	 * @param integer $reverse Режим сортировки данных.
 	 */
-	public function StatTechCookies($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null) {
+	public function StatTechCookies($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null) {
 		return $this -> QueryYandex("get", "/stat/tech/cookies", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse));
 	}
 
@@ -842,7 +851,7 @@ class YandexMetrikaApi {
 	 * @param string  $sort    Поле данных отчета, по которому необходимо отсортировать результаты запроса.
 	 * @param integer $reverse Режим сортировки данных.
 	 */
-	public function StatTechJavaScript($id, $goal_id, $date1 = null, $date2 = null, $sort = null, $reverse = null) {
+	public function StatTechJavaScript($id, $goal_id = null, $date1 = null, $date2 = null, $sort = null, $reverse = null) {
 
 		return $this -> QueryYandex("get", "/stat/tech/javascript", array("id" => $id, "goal_id" => $goal_id, "date1" => $date1, "date2" => $date2, "sort" => $sort, "reverse" => $reverse));
 	}

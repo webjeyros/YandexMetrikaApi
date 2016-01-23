@@ -38,10 +38,10 @@ class YandexMetrikaApi {
 		if ($method === "get") {
 			foreach ($options as $key => $value)
 				$opt .= "{$key}={$value}&";
-			$ret = Unirest::get("http://api-metrika.yandex.ru" . $path . ".json?pretty=1&{$opt}", array("Content-Type" => "application/x-yametrika+json", "Authorization" => "OAuth " . $this -> access_token, "Accept" => "application/x-yametrika+json"));
+			$ret = Unirest\Request::get("http://api-metrika.yandex.ru" . $path . ".json?pretty=1&{$opt}", array("Content-Type" => "application/x-yametrika+json", "Authorization" => "OAuth " . $this -> access_token, "Accept" => "application/x-yametrika+json"));
 
 		} else {
-			$ret = Unirest::$method("http://api-metrika.yandex.ru" . $path . ".json?pretty=1", array("Content-Type" => "application/x-yametrika+json", "Authorization" => "OAuth " . $this -> access_token, "Accept" => "application/x-yametrika+json", json_encode($options)));
+			$ret = Unirest\Request::$method("http://api-metrika.yandex.ru" . $path . ".json?pretty=1", array("Content-Type" => "application/x-yametrika+json", "Authorization" => "OAuth " . $this -> access_token, "Accept" => "application/x-yametrika+json", json_encode($options)));
 		}
 		if ($ret -> code != 200) :
 			throw new Exception("Error" . $ret -> body);

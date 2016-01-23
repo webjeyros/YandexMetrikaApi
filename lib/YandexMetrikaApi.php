@@ -46,7 +46,7 @@ class YandexMetrikaApi {
 		}
 		if ($ret -> code != 200) :
 			throw new Exception("Error" . $ret -> body);
-		elseif (json_decode($ret -> raw_body) -> errors) :
+		elseif (property_exists( json_decode($ret -> raw_body), 'errors' )) :
 			throw new Exception("Method error");
 		else :
 			return json_decode($ret -> raw_body);
